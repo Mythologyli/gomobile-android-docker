@@ -1,4 +1,4 @@
-FROM openjdk:11-jdk-bullseye
+FROM openjdk:17-jdk-bullseye
 
 ENV GO_VERSION 1.21.3
 ENV GOMOBILE_COMMIT latest
