@@ -13,12 +13,12 @@ ENV ANDROID_PLATFORM_VERSION 34
 # https://github.com/CircleCI-Public/cimg-android/blob/main/2022.03/ndk/Dockerfile
 # https://github.com/CircleCI-Public/cimg-android/blob/7af5c262821e4bf68c19cdb0ed34283165684e11/2022.03/ndk/Dockerfile
 
-ENV ANDROID_HOME "/home/circleci/android-sdk"
+ENV ANDROID_HOME "/home/runner/android-sdk"
 ENV ANDROID_SDK_ROOT $ANDROID_HOME
 ENV CMDLINE_TOOLS_ROOT "${ANDROID_HOME}/cmdline-tools/latest/bin"
 ENV ADB_INSTALL_TIMEOUT 120
 ENV PATH "${ANDROID_HOME}/emulator:${ANDROID_HOME}/cmdline-tools/latest/bin:${ANDROID_HOME}/tools:${ANDROID_HOME}/tools/bin:${ANDROID_HOME}/platform-tools:${ANDROID_HOME}/platform-tools/bin:${PATH}"
-ENV ANDROID_NDK_HOME "/home/circleci/android-sdk/ndk/${NDK_LTS_VERSION}"
+ENV ANDROID_NDK_HOME "/home/runner/android-sdk/ndk/${NDK_LTS_VERSION}"
 ENV ANDROID_NDK_ROOT "${ANDROID_NDK_HOME}"
 
 RUN mkdir -p ${ANDROID_HOME}/cmdline-tools && \
