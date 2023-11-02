@@ -2,9 +2,9 @@ FROM openjdk:17-jdk-bullseye
 
 ENV GO_VERSION 1.21.3
 ENV GOMOBILE_COMMIT latest
-ENV NDK_LTS_VERSION 26.1.10909125
+ENV NDK_LTS_VERSION 23.2.8568313
 ENV SDK_TOOLS_VERSION 10406996
-ENV ANDROID_PLATFORM_VERSION 34
+ENV ANDROID_PLATFORM_VERSION 24
 
 ### Adapted from CircleCI Android docker image ###
 # https://github.com/CircleCI-Public/cimg-android/blob/main/2022.03/Dockerfile
